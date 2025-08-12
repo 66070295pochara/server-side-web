@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Routes
-app.use('/api', productRoutes); // <-- แก้ตรงนี้
+app.use('/api', productRoutes); // <-- แก้ตรงนี้f
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
